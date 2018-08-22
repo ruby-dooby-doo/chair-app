@@ -38,4 +38,10 @@ class ChairsController < ApplicationController
     chair.save
     redirect_to "/chairs/#{chair.id}"
   end
+
+  def destroy
+    chair = Chair.find_by(id: params[:id])
+    chair.destroy
+    redirect_to "/chairs"
+  end
 end

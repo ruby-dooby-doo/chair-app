@@ -5,3 +5,7 @@
 <p>color: <%= @chair.color %></p>
 <p>height: <%= @chair.height %></p>
 <p>legs: <%= @chair.legs %></p>
+
+
+throw out the chair
+<%= button_to "delete the chair", "/chairs/#{@chair.id}", method: :delete %>

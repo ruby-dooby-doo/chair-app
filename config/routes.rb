@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   post '/chairs' => 'chairs#create'
   get '/chairs/:id/edit' => 'chairs#edit'
   patch '/chairs/:id' => 'chairs#update'
+  delete '/chairs/:id' => 'chairs#destroy'
 end
