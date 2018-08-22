@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get '/chairs/new' => 'chairs#new'
   get '/chairs/:id' => 'chairs#show'
   post '/chairs' => 'chairs#create'
+  get '/chairs/:id/edit' => 'chairs#edit'
+  patch '/chairs/:id' => 'chairs#update'
 end

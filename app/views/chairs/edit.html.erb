@@ -1,0 +1,9 @@
+<h1>edit form</h1>
+
+<%= form_tag "/chairs/#{@chair.id}", method: :patch do %>
+  <p>color: <input type="text" name="color" value="<%= @chair.color %>"></p>
+  <p>material: <input type="text" name="material" value="<%= @chair.material %>"></p>
+  <p>height: <input type="text" name="height" value="<%= @chair.height %>"></p>
+  <p>legs: <input type="text" name="legs" value="<%= @chair.legs %>"></p>
+  <p>chair: <input type="submit" value="make a new chair"></p>
+<% end %>
