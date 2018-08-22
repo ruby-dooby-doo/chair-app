@@ -1,0 +1,9 @@
+<h1>This is a page to show a form to make a new chair</h1>
+
+<%= form_tag "/chairs", method: :post do %>
+  <p>color: <input type="text" name="color"></p>
+  <p>material: <input type="text" name="material"></p>
+  <p>height: <input type="text" name="height"></p>
+  <p>legs: <input type="text" name="legs"></p>
+  <p>chair: <input type="submit" value="make a new chair"></p>
+<% end %>
