@@ -1,16 +1,13 @@
 class ChairsController < ApplicationController
   def index
     @chairs = Chair.all
-    render 'index.html.erb'
   end
 
   def show
     @chair = Chair.find_by(id: params[:id])
-    render 'show.html.erb'
   end
 
   def new
-    render 'new.html.erb'
   end
 
   def create
@@ -26,7 +23,6 @@ class ChairsController < ApplicationController
 
   def edit
     @chair = Chair.find_by(id: params[:id])
-    render 'edit.html.erb'
   end
 
   def update
